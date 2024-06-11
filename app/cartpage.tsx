@@ -6,13 +6,13 @@ export default function Cart() {
   const router = useRouter();
 
   const [cartItems, setCartItems] = useState([
-    {
-      id: 1,
-      name: "Nasi Goreng",
-      price: 18000,
-      quantity: 1,
-      image: require('../assets/images/nasigoreng.jpeg'),
-    },
+    // {
+    //   id: 1,
+    //   name: "Nasi Goreng",
+    //   price: 18000,
+    //   quantity: 1,
+    //   image: require('../assets/images/nasigoreng.jpeg'),
+    // },
     {
       id: 2,
       name: "Burger Bang",

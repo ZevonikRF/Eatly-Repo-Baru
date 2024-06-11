@@ -6,6 +6,7 @@ export default function MenuProfile({item}) {
   const router = useRouter();
   const params = useLocalSearchParams();
   const [modalVisible,setModalVisible] = useState(false);
+  
   return (
     <View style={styles.container}>
       <Image source={{ uri: params?.image }} style={styles.image} />

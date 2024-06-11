@@ -1,18 +1,28 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
 export default function VirtualAccount(){
   const router = useRouter(); 
-  const totalPrice = 23000; 
+  const totalPrice = 25000; 
   const datePay = '04 June 2024'; 
   const timePay = '20.00'; 
   const noTelp = '088376209123'; 
-
+  const [currentDate, setCurrentDate] = useState('');
   const okayVA = () => {
     // okay payment done
     router.push('/success');
   };
+
+  useEffect(() => {
+    var date = new Date().getDate()
+    var month = new Date().getMonth()
+    var year =  new Date().getFullYear()
+    var hours =  new Date().getHours() + 1
+    var min =  new Date().getMinutes()
+    var sec =  new Date().getSeconds()
+    setCurrentDate(date+'/'+month+'/'+year+' '+hours+':'+min+':'+sec)
+  },[])
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -25,7 +35,7 @@ export default function VirtualAccount(){
         </View>
         <View style={styles.infoBox}>
           <Text style={styles.label}>Pay on</Text>
-          <Text style={styles.value}>{datePay}, {timePay}</Text>
+          <Text style={styles.value}>{currentDate}</Text>
         </View>
         <View style={styles.infoBox}>
           <Text style={styles.label}>Bank BBA</Text>

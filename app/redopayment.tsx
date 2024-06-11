@@ -4,7 +4,7 @@ import { Text, View, StyleSheet, TouchableOpacity, Image, Modal, Pressable } fro
 
 export default function RedoPayment(){
     const router = useRouter();
-    const dummyPrice = 18000;
+    const dummyPrice = 20000;
     const deliveryPrice = 5000;
     const [selectedRadioAtas, setSelectedRadioAtas] = useState(1);
     const [selectedRadioBawah, setSelectedRadioBawah] = useState(3);
@@ -73,7 +73,7 @@ export default function RedoPayment(){
                 <View style={styles.totalContainer}>
                     <Text style={styles.totalText}>Total</Text>
                     <View style={styles.finalPrice}>
-                        <Text style={styles.finalPriceText}>Rp {dummyPrice}</Text>
+                        <Text style={styles.finalPriceText}>Rp {selectedRadioBawah == 4 ? dummyPrice + deliveryPrice : dummyPrice}</Text>
                     </View>  
                 </View>
                 <View style={styles.pickupDeliveryContainer}>

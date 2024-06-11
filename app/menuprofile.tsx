@@ -50,20 +50,20 @@ export default function MenuProfile({item}) {
                 <Text style={styles.sectionTitle}>What People Are Saying</Text>
             </View>
           <View style={styles.ratingContainer}>
-            <Image source={{ uri: '../assets/images/star-1.png' }} style={styles.starIcon} />
+            <Image source={require('../assets/images/star-1.png')} style={styles.starIcon} />
             <Text style={styles.ratingText}>{params?.rating}/5</Text>
           </View>
           <View style={styles.highlights}>
             <View style={styles.highlight}>
-              <Image source={{ uri: '../assets/images/thumbsup.png' }} style={styles.highlightImage} />
+              <Image source={require('../assets/images/thumbsup.png')} style={styles.highlightImage} />
               <Text>Delicious Food</Text>
             </View>
             <View style={styles.highlight}>
-              <Image source={{ uri: '../assets/images/smiley.png' }} style={styles.highlightImage} />
+              <Image source={require('../assets/images/smiley.png')} style={styles.highlightImage} />
               <Text>Friendly Staff</Text>
             </View>
             <View style={styles.highlight}>
-              <Image source={{ uri: '../assets/images/price.jpeg' }} style={styles.highlightImage} />
+              <Image source={require('../assets/images/price.jpeg')} style={styles.highlightImage} />
               <Text>Price Wise</Text>
             </View>
           </View>

@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   completeOrderButton: {
-    backgroundColor: '#fa4a0c',
+    backgroundColor: '#ff9d7b',
     paddingVertical: 15,
     alignItems: 'center',
     borderRadius: 25,

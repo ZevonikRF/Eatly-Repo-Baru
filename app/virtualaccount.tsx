@@ -38,7 +38,7 @@ export default function VirtualAccount(){
           <Text style={styles.value}>{currentDate}</Text>
         </View>
         <View style={styles.infoBox}>
-          <Text style={styles.label}>Bank BBA</Text>
+          <Text style={styles.label}>Bank BCA</Text>
           <Text style={styles.value}>Rp {totalPrice}</Text>
         </View>
         <View style={styles.infoBox}>
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: '100%',
-    backgroundColor: '#FF6B6B',
+    backgroundColor: '#ff9d7b',
     paddingVertical: 15,
     borderRadius: 10,
     alignItems: 'center',
